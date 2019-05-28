@@ -1,0 +1,128 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_headeryazar</title>
+</head>
+<body>
+    <header>
+
+        <nav class="navbar  navbar-fixed-top" style="background-color:white; color:#222;font-family: Lato, Arial, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;  box-shadow: 0 0 8px #e6e6e6;   text-transform: uppercase;
+    letter-spacing: .8px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" style="border-right: 1px solid #e6e6e6;" href="/Home/Index">Bilim ve Teknoloji</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">KONULAR<span class="caret"></span></a>
+                                    <ul class="dropdown-menu" style="background-color:white; color:#222;font-family: Lato, Arial, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;">
+                                        <li><a href="/yazilar/Index">ELEKTRONİK</a></li>
+                                        <li><a href="/yazilar/enerji">ENERJİ</a></li>
+                                        <li><a href="/yazilar/bilim">BİLİM</a></li>
+                                        <li><a href="/yazilar/yazicilar">3D YAZICILAR</a></li>
+                                        <li><a href="/yazilar/robotlar">ROBOTLAR</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/hakkimizda/Index">HAKKIMIZDA</a></li>
+                                <li><a href="/iletisim/Index" style="border-right: 1px solid #e6e6e6;">BİZE ULAŞIN</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="/Home/Index"><span class="glyphicon glyphicon-log-in"></span> Çıkış</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <link href="~/Content/slider.css" rel="stylesheet" />
+    <div class="banner" style="margin-top:60px;">
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="~/Content/images/banner2.jpg" style="width:100%; height:480px">
+                <div class="text" style="color:black">...</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="~/Content/images/banner10.jpg" style="width:100%;height:480px">
+                <div class="text" style="color:black">...</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="~/Content/images/banner1.jpeg" style="width:100%;height:480px">
+                <div class="text" style="color:black">...</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="~/Content/images/banner6.jpeg" style="width:100%;height:480px">
+                <div class="text" style="color:black">...</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="~/Content/images/banner8.jpg" style="width:100%;height:480px">
+                <div class="text" style="color:black">...</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="~/Content/images/banner5.jpg" style="width:100%;height:480px">
+                <div class="text" style="color:black">...</div>
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2050); // Bu alandan resimlerin geçiş süresini değiştirebilirsiniz.
+    }
+    </script>
+</body>
+</html>

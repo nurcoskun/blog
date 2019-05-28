@@ -1,0 +1,46 @@
+﻿@model WebApplication1.Models.YazilarViewModels
+@{
+    ViewBag.Title = "Ana Sayfa";
+    Layout = "~/Views/Shared/_Layoutyazar.cshtml";
+}
+
+<div class="wrapper" style="background-color:white;height:auto;width:100%">
+
+
+    <div class="container">
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 _11">
+
+        </div>
+
+        <div class="row">
+            @foreach (var item in Model.YaziListesi)
+            {
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                    <div class="_10" style="margin-left:120px"><b>@item.Kategori.kategori_adi</b></div>
+                    <div class="col-sm-12 col-md-12">
+                        <div class="thumbnail">
+                            <img src="/@item.fotograf" alt="...">
+                            <div class="caption">
+                                <h3>@item.baslik</h3>
+                                <p>@item.metin</p>
+                                <p><a href='/Home/Detail/@item.yazi_id' class="btn btn-primary" role="button">Devamını Görüntüle</a> </p>
+                                <p><a href='/anasayfa/Delete/@item.yazi_id' class="btn btn-primary" role="button">Sil</a> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            }
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+

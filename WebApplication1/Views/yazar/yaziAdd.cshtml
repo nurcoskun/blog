@@ -1,0 +1,65 @@
+﻿@model Yazilar
+
+@{
+    ViewBag.Title = "Yazı Ekle";
+    Layout = "~/Views/Shared/_Layoutyazar.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-4 col-sm-4 col-md-offset-4 col-sm-offset-4">
+        <section class="page-title">
+            <h2 style="text-align:center">YAZI EKLE</h2>
+            @ViewBag.Uyari
+        </section>
+        <!--end page-title-->
+        <section>
+            <form asp-controller="Yazar" asp-action="Add" method="post">
+                <div class="form-group">
+                    <label for="text">Yazı Başlık</label>
+                    @Html.TextBoxFor(model => model.baslik, new { @class = "form-control", placeholder = "Başlık Ekleyin", required = " " })
+                </div><br />
+
+                <!--end form-group--> 
+                <div class="form-group" style="height:auto">
+                    <label for="text">Yazı Özet</label>
+                    @Html.TextBoxFor(model => model.ozet, new { @class = "form-control", placeholder = "Özet Ekleyin", required = " " })
+
+                </div>
+                <div class="form-group" style="height:auto">
+                    <label for="text">Yazı İçeriği</label>
+                    @Html.TextBoxFor(model => model.metin, new { @class = "form-control", placeholder = "İçerik Ekleyin", required = " " })
+
+                </div>
+
+                <div class="form-group">
+                    <label for="text">Kategori ID</label>
+                    @Html.TextBoxFor(model => model.kategori_id, new { @class = "form-control", placeholder = "Kategori ID", required = " " })
+
+                </div>
+                <div class="form-group">
+                    <label for="text">Yazar ID</label>
+                    @Html.TextBoxFor(model => model.yazar_id, new { @class = "form-control", placeholder = "Yazar ID", required = " " })
+
+                </div>
+                <div class="form-group center">
+                    <br />
+                    <button type="submit" class="btn btn-primary width-100" style="color: #222; /* Yazı rengi değişir */
+     background:rgba(185, 185, 185, 0.73); border:0px; width:100%">
+                        EKLE
+                    </button>
+                    <br /> <br />
+                    <p>
+                        <a href='/yazar/Index/' class="btn btn-primary" role="button" style="color: #222; /* Yazı rengi değişir */
+     background:rgba(185, 185, 185, 0.73); border:0px; width:100%">ANASAYFA</a>
+                    </p>
+                </div>
+                <!--end form-group-->
+            </form>
+            <hr>
+
+
+        </section>
+    </div>
+    <!--col-md-4-->
+</div>
+

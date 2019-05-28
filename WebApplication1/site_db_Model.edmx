@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="site_dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Kategori">
+          <Key>
+            <PropertyRef Name="kategori_id" />
+          </Key>
+          <Property Name="kategori_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="kategori_adi" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Yazarlar">
+          <Key>
+            <PropertyRef Name="yazar_id" />
+          </Key>
+          <Property Name="yazar_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="yazar_adi_soyadi" Type="nvarchar" MaxLength="300" />
+          <Property Name="mail" Type="nvarchar" MaxLength="150" />
+          <Property Name="sifre" Type="int" />
+        </EntityType>
+        <EntityType Name="Yazilar">
+          <Key>
+            <PropertyRef Name="yazi_id" />
+          </Key>
+          <Property Name="yazi_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="baslik" Type="nvarchar" MaxLength="200" />
+          <Property Name="tarih" Type="datetime2" Precision="7" />
+          <Property Name="metin" Type="text" />
+          <Property Name="kategori_id" Type="int" />
+          <Property Name="yazar_id" Type="int" />
+          <Property Name="ozet" Type="text" />
+          <Property Name="fotograf" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <Association Name="FK_Yazilar_Kategori">
+          <End Role="Kategori" Type="Self.Kategori" Multiplicity="0..1" />
+          <End Role="Yazilar" Type="Self.Yazilar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kategori">
+              <PropertyRef Name="kategori_id" />
+            </Principal>
+            <Dependent Role="Yazilar">
+              <PropertyRef Name="kategori_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Yazilar_Yazarlar">
+          <End Role="Yazarlar" Type="Self.Yazarlar" Multiplicity="0..1" />
+          <End Role="Yazilar" Type="Self.Yazilar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Yazarlar">
+              <PropertyRef Name="yazar_id" />
+            </Principal>
+            <Dependent Role="Yazilar">
+              <PropertyRef Name="yazar_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="site_dbModelStoreContainer">
+          <EntitySet Name="Kategori" EntityType="Self.Kategori" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Yazarlar" EntityType="Self.Yazarlar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Yazilar" EntityType="Self.Yazilar" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Yazilar_Kategori" Association="Self.FK_Yazilar_Kategori">
+            <End Role="Kategori" EntitySet="Kategori" />
+            <End Role="Yazilar" EntitySet="Yazilar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Yazilar_Yazarlar" Association="Self.FK_Yazilar_Yazarlar">
+            <End Role="Yazarlar" EntitySet="Yazarlar" />
+            <End Role="Yazilar" EntitySet="Yazilar" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="site_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Kategori">
+          <Key>
+            <PropertyRef Name="kategori_id" />
+          </Key>
+          <Property Name="kategori_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kategori_adi" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Yazilar" Relationship="Self.FK_Yazilar_Kategori" FromRole="Kategori" ToRole="Yazilar" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Yazarlar">
+          <Key>
+            <PropertyRef Name="yazar_id" />
+          </Key>
+          <Property Name="yazar_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="yazar_adi_soyadi" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="mail" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="sifre" Type="Int32" />
+          <NavigationProperty Name="Yazilar" Relationship="Self.FK_Yazilar_Yazarlar" FromRole="Yazarlar" ToRole="Yazilar" />
+        </EntityType>
+        <EntityType Name="Yazilar">
+          <Key>
+            <PropertyRef Name="yazi_id" />
+          </Key>
+          <Property Name="yazi_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="baslik" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="tarih" Type="DateTime" Precision="7" />
+          <Property Name="metin" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="kategori_id" Type="Int32" />
+          <Property Name="yazar_id" Type="Int32" />
+          <NavigationProperty Name="Kategori" Relationship="Self.FK_Yazilar_Kategori" FromRole="Yazilar" ToRole="Kategori" />
+          <NavigationProperty Name="Yazarlar" Relationship="Self.FK_Yazilar_Yazarlar" FromRole="Yazilar" ToRole="Yazarlar" />
+          <Property Name="ozet" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="fotograf" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_Yazilar_Kategori">
+          <End Role="Kategori" Type="Self.Kategori" Multiplicity="0..1" />
+          <End Role="Yazilar" Type="Self.Yazilar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kategori">
+              <PropertyRef Name="kategori_id" />
+            </Principal>
+            <Dependent Role="Yazilar">
+              <PropertyRef Name="kategori_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Yazilar_Yazarlar">
+          <End Role="Yazarlar" Type="Self.Yazarlar" Multiplicity="0..1" />
+          <End Role="Yazilar" Type="Self.Yazilar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Yazarlar">
+              <PropertyRef Name="yazar_id" />
+            </Principal>
+            <Dependent Role="Yazilar">
+              <PropertyRef Name="yazar_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="site_dbEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Kategori" EntityType="Self.Kategori" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="Yazarlar" EntityType="Self.Yazarlar" />
+          <EntitySet Name="Yazilar" EntityType="Self.Yazilar" />
+          <AssociationSet Name="FK_Yazilar_Kategori" Association="Self.FK_Yazilar_Kategori">
+            <End Role="Kategori" EntitySet="Kategori" />
+            <End Role="Yazilar" EntitySet="Yazilar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Yazilar_Yazarlar" Association="Self.FK_Yazilar_Yazarlar">
+            <End Role="Yazarlar" EntitySet="Yazarlar" />
+            <End Role="Yazilar" EntitySet="Yazilar" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="site_dbModelStoreContainer" CdmEntityContainer="site_dbEntities2">
+          <EntitySetMapping Name="Kategori">
+            <EntityTypeMapping TypeName="site_dbModel.Kategori">
+              <MappingFragment StoreEntitySet="Kategori">
+                <ScalarProperty Name="kategori_id" ColumnName="kategori_id" />
+                <ScalarProperty Name="kategori_adi" ColumnName="kategori_adi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="site_dbModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Yazarlar">
+            <EntityTypeMapping TypeName="site_dbModel.Yazarlar">
+              <MappingFragment StoreEntitySet="Yazarlar">
+                <ScalarProperty Name="yazar_id" ColumnName="yazar_id" />
+                <ScalarProperty Name="yazar_adi_soyadi" ColumnName="yazar_adi_soyadi" />
+                <ScalarProperty Name="mail" ColumnName="mail" />
+                <ScalarProperty Name="sifre" ColumnName="sifre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Yazilar">
+            <EntityTypeMapping TypeName="site_dbModel.Yazilar">
+              <MappingFragment StoreEntitySet="Yazilar">
+                <ScalarProperty Name="fotograf" ColumnName="fotograf" />
+                <ScalarProperty Name="ozet" ColumnName="ozet" />
+                <ScalarProperty Name="yazi_id" ColumnName="yazi_id" />
+                <ScalarProperty Name="baslik" ColumnName="baslik" />
+                <ScalarProperty Name="tarih" ColumnName="tarih" />
+                <ScalarProperty Name="metin" ColumnName="metin" />
+                <ScalarProperty Name="kategori_id" ColumnName="kategori_id" />
+                <ScalarProperty Name="yazar_id" ColumnName="yazar_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

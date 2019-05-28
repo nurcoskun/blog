@@ -1,0 +1,42 @@
+﻿@model Yazarlar
+@{
+    ViewBag.Title = "Giriş Yap";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-4 col-sm-4 col-md-offset-4 col-sm-offset-4">
+        <section class="page-title">
+            <h2 style="text-align:center">YAZAR GİRİŞİ</h2>
+            @ViewBag.Uyari
+        </section>
+        <!--end page-title-->
+        <section>
+            <form class="form inputs-underline" method="post" action="/Giris/giris">
+                <div class="form-group">
+                    <label for="mail">E Posta</label>
+                    <input type="email" class="form-control" required="" name="mail" id="mail" placeholder="Mail Adresiniz">
+                </div><br />
+                <!--end form-group-->
+                <div class="form-group">
+                    <label for="password">Şifreniz</label>
+                    <input type="password" class="form-control" required="" name="sifre" id="sifre" placeholder="Şifreniz">
+                </div>
+                <div class="form-group center">
+                    <br />
+                    <a href="/yazar/Index">
+                        <button type="submit" class="btn btn-primary width-100" style="color: #222; /* Yazı rengi değişir */
+     background:rgba(185, 185, 185, 0.73); border:0px; width:100%"></a>
+                            Giriş Yap
+                        </button>
+</div><br />
+                <!--end form-group-->
+            </form>
+            <hr>
+
+
+        </section>
+    </div>
+    <!--col-md-4-->
+</div>

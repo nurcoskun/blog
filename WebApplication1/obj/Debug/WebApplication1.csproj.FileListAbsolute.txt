@@ -1,0 +1,98 @@
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\System.Web.Webpages.dll
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.dll
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\System.Web.Webpages.xml
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.xml
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\esmacoskun\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.dll
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\System.Web.Webpages.dll
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.dll
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\System.Web.Webpages.xml
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.xml
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.xml
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+\\srvvdifs01\Profiles\BilProgramlama\esmacoskun\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\System.Web.Webpages.dll
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.dll
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\System.Web.Webpages.xml
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.xml
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\ESMA NUR\Desktop\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\WebApplication1.dll
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\WebApplication1.pdb
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\EntityFramework.dll
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\System.Web.Webpages.dll
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\System.Web.Webpages.Razor.dll
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\EntityFramework.xml
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\System.Web.Webpages.xml
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\System.Web.Webpages.Razor.xml
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\ESMA NUR\Desktop\asp.net_bilimtekniksite\WebApplication1\obj\Debug\WebApplication1.pdb

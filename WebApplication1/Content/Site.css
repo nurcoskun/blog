@@ -1,0 +1,156 @@
+﻿._1 {
+    line-height: 1.1;
+    background-color: white;
+}
+
+._2 {
+    margin-bottom: 20px;
+}
+
+._3 {
+    background-color: #b9040e;
+    border-radius: 100%;
+    width: 110px;
+    height: 110px;
+    padding: 5px;
+    margin-bottom: 4px !important;
+}
+
+p-0 {
+    padding: 0px !important;
+}
+a.hover{
+    background-color:#fff;
+}
+.navbar navbar-fixed-top {
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+}
+.banner {
+    width: 100%;
+    float: left;
+    margin-top: 200px;
+    height: 360px;
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+}
+._4 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+._5 {
+    background-color: #e7e7e7;
+    color: #fff;
+    padding: 10px;
+}
+
+    ._5 > div > p {
+        padding-top: 4px;
+    }
+
+._6 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+._7 {
+    font-size: 35px;
+}
+
+._8 {
+    font-size: 25px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+._9 {
+    width: 100%;
+}
+body {
+    background-color: white;
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+}
+header {
+    float: left;
+    background-color: white;
+    box-shadow: 0 0 8px #e6e6e6;
+    margin-left: 50px;
+text-align: center;
+line-height: 60px;
+color: #222;
+text-transform: uppercase;
+letter-spacing: .8px;
+}
+
+._10 {
+    position: absolute;
+    top: 0px;
+    right: 31px;
+    z-index: 1;
+    background-color: red;
+    color: #fff;
+    padding: 4px;
+    border: 1px solid #ccc;
+}
+
+._11 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+body {
+    background-color: white;
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    float: left;
+    background-color: white;
+    box-shadow: 0 0 8px #e6e6e6;
+}
+
+.hakkimizda{
+
+width:100%;
+height:auto;
+float:left;
+padding-left:15px;
+padding-right:15px;
+}
